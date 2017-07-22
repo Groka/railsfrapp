@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deleted Companies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Activity</th>
+      <th>Contact</th>
+      <th>Number</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Web</th>
+      <th>Status</th>
+      <th>Member</th>
+      <th>Event</th>
+      <th>Allowed</th>
+      <th>Note</th>
+      <th>Old</th>
+      <th>Reason</th>
+      <th>Deleted by</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deleted_companies.each do |deleted_company| %>
+      <tr>
+        <td><%= deleted_company.name %></td>
+        <td><%= deleted_company.activity %></td>
+        <td><%= deleted_company.contact %></td>
+        <td><%= deleted_company.number %></td>
+        <td><%= deleted_company.email %></td>
+        <td><%= deleted_company.address %></td>
+        <td><%= deleted_company.web %></td>
+        <td><%= deleted_company.status %></td>
+        <td><%= deleted_company.member %></td>
+        <td><%= deleted_company.event %></td>
+        <td><%= deleted_company.allowed %></td>
+        <td><%= deleted_company.note %></td>
+        <td><%= deleted_company.old_id %></td>
+        <td><%= deleted_company.reason %></td>
+        <td><%= deleted_company.deleted_by_id %></td>
+        <td><%= link_to 'Show', deleted_company %></td>
+        <td><%= link_to 'Edit', edit_deleted_company_path(deleted_company) %></td>
+        <td><%= link_to 'Destroy', deleted_company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deleted Company', new_deleted_company_path %>

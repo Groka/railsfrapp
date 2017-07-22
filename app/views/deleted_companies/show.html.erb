@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deleted_company.name %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @deleted_company.activity %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @deleted_company.contact %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @deleted_company.number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @deleted_company.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @deleted_company.address %>
+</p>
+
+<p>
+  <strong>Web:</strong>
+  <%= @deleted_company.web %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @deleted_company.status %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @deleted_company.member %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @deleted_company.event %>
+</p>
+
+<p>
+  <strong>Allowed:</strong>
+  <%= @deleted_company.allowed %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @deleted_company.note %>
+</p>
+
+<p>
+  <strong>Old:</strong>
+  <%= @deleted_company.old_id %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @deleted_company.reason %>
+</p>
+
+<p>
+  <strong>Deleted by:</strong>
+  <%= @deleted_company.deleted_by_id %>
+</p>
+
+<%= link_to 'Edit', edit_deleted_company_path(@deleted_company) %> |
+<%= link_to 'Back', deleted_companies_path %>

@@ -1,0 +1,13 @@
+class CreateMemberTypes < ActiveRecord::Migration[5.1]
+  def change
+    create_table :member_types do |t|
+      t.string :title
+
+      t.timestamps
+    end
+
+    MemberType.create :title => "Member"
+    MemberType.create :title => "Admin"
+
+  end
+end

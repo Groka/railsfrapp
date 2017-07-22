@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  activity: one
+  contact: MyText
+  number: MyText
+  email: MyText
+  address: MyString
+  web: MyString
+  status: one
+  member: one
+  event: one
+  allowed: false
+  note: MyText
+  old_id: 1
+  reason: MyText
+  deleted_by_id: 1
+
+two:
+  name: MyString
+  activity: two
+  contact: MyText
+  number: MyText
+  email: MyText
+  address: MyString
+  web: MyString
+  status: two
+  member: two
+  event: two
+  allowed: false
+  note: MyText
+  old_id: 1
+  reason: MyText
+  deleted_by_id: 1

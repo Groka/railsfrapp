@@ -1,0 +1,92 @@
+<%= form_with(model: deleted_company, local: true) do |form| %>
+  <% if deleted_company.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(deleted_company.errors.count, "error") %> prohibited this deleted_company from being saved:</h2>
+
+      <ul>
+      <% deleted_company.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :deleted_company_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activity_id %>
+    <%= form.text_field :activity_id, id: :deleted_company_activity_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact %>
+    <%= form.text_area :contact, id: :deleted_company_contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :number %>
+    <%= form.text_area :number, id: :deleted_company_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_area :email, id: :deleted_company_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :deleted_company_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :web %>
+    <%= form.text_field :web, id: :deleted_company_web %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status_id %>
+    <%= form.text_field :status_id, id: :deleted_company_status_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :member_id %>
+    <%= form.text_field :member_id, id: :deleted_company_member_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :event_id %>
+    <%= form.text_field :event_id, id: :deleted_company_event_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allowed %>
+    <%= form.check_box :allowed, id: :deleted_company_allowed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_area :note, id: :deleted_company_note %>
+  </div>
+
+  <div class="field">
+    <%= form.label :old_id %>
+    <%= form.number_field :old_id, id: :deleted_company_old_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reason %>
+    <%= form.text_area :reason, id: :deleted_company_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deleted_by_id %>
+    <%= form.number_field :deleted_by_id, id: :deleted_company_deleted_by_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
